@@ -5,6 +5,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
+# Contributor: Houge Langley <hougelangley1987@gmail.com>
 
 ### BUILD OPTIONS
 # Set these variables to ANYTHING that is not null to enable them
@@ -78,14 +79,16 @@ _lucjanpath="https://gitlab.com/sirlucjan/kernel-patches/raw/master/${_major}"
 
 source=("https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/${_srcname}.tar.xz"
         "https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/${_srcname}.tar.sign"
-        "https://github.com/damentz/${_lqxpatchname}/archive/${_major}-${_lqxpatchrel}.tar.gz")
+        "https://github.com/damentz/${_lqxpatchname}/archive/${_major}-${_lqxpatchrel}.tar.gz"
+        "https://github.com/HougeLangley/customkernel/releases/download/v${_major}-others/v1-cjktty-${_major}.patch")
 validpgpkeys=(
     'ABAF11C65A2970B130ABE3C479BE3E4300411886' # Linus Torvalds
     '647F28654894E3BD457199BE38DBBDC86092693E' # Greg Kroah-Hartman
 )
 sha512sums=('d25ad40b5bcd6a4c6042fd0fd84e196e7a58024734c3e9a484fd0d5d54a0c1d87db8a3c784eff55e43b6f021709dc685eb0efa18d2aec327e4f88a79f405705a'
             'SKIP'
-            'c4b3030b8c47be633e5a53eed376b309497b1d878e7b63474f93b0a789273b96d02ee18fdb5691b284ec42906c819c8d2d37388a3e711442d5077cfaad78d8cd')
+            'c4b3030b8c47be633e5a53eed376b309497b1d878e7b63474f93b0a789273b96d02ee18fdb5691b284ec42906c819c8d2d37388a3e711442d5077cfaad78d8cd'
+            'c7a4d9ca1501f4577ab13df13541314f8d0c061cbd25ecafb1d33aa9ce5e4cd4787c2b41a625325937783b71be240ef252184915d250171a62095e827ba5203c')
 
 
 
