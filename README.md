@@ -1,8 +1,7 @@
-# Xanmod-hybrid for me
+# liquorix for me
 
-1. liquorix patches
+1. liquorix offical patches
 2. cjktty patches
-3. my own tweaks
 
 **注意** 
 
